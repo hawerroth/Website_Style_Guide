@@ -22,11 +22,12 @@ header ul {
 	display: inline-block;
 	list-style: none;
 	margin: auto;
+	padding: 0px;
 }
 
 header li {
 	display: inline-block;
-	margin: 0px 50px;
+	margin: 0px 10px 0px 15px;
 }
 
 header a {
@@ -67,11 +68,24 @@ main {
 }
 
 .color_box {
-	width: 280px;
+	width: 33%;
 	height: 160 px;
 	border-radius: 10px;
 	display: inline-grid;
 	margin: 20px;
+}
+
+@media only screen and (max-width: 920px) {
+	.color_box {
+		width: 40%;
+		margin: 10px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.color_box {
+		width: 75%;
+	}
 }
 
 .color_box ul {
